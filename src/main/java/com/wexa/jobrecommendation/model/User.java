@@ -9,8 +9,8 @@ import org.springframework.data.neo4j.core.schema.Relationship;
 
 @Node("User")
 public class User {
-	
-	@Id
+
+    @Id
     private String id;
     private String name;
 
@@ -27,5 +27,4 @@ public class User {
     public String getName() { return name; }
     public Set<Skill> getSkills() { return skills; }
     public void setSkills(Set<Skill> skills) { this.skills = skills; }
-
 }
